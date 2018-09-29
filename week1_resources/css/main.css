@@ -1,0 +1,39 @@
+body, html {
+  background: #0B3E5F;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box; }
+
+button {
+  width: 5rem;
+  height: 2rem;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem; }
+
+div {
+  display: none;
+  border: 2px solid black;
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 25%;
+  font-size: 2rem;
+  text-align: center; }
+
+#alertModal {
+  background: url("/images/bell.png") no-repeat;
+  background-position: 1rem; }
+
+#successModal {
+  background: url("/images/check.png") no-repeat;
+  background-position: 1rem; }
+
+#warningModal {
+  background: url("/images/warning.png") no-repeat;
+  background-position: 1rem; }
+
+#errorModal {
+  background: url("/images/error.png") no-repeat;
+  background-position: 1rem; }
