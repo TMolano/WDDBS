@@ -1,0 +1,17 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "Babel Plugin",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets es2015 src -d dist"
+  },
+  "author": "Trevor Molano",
+  "license": "ISC"
+}

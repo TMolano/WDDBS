@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooking App</title>
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<header>
+    <h1 class="headerText">Cooking Pal</h1>
+    <h2 class="headerText">Find and Manage amazing recipes!</h2>
+    <nav>
+    <ul>
+        <li>Appetizers</li>
+        <li>Main Course</li>
+        <li>Salads</li>
+        <li>Soups</li>
+        <li>Desserts</li>
+    </ul>
+    </nav>
+</header>
+
+<section>
+    <h1>
+        Add new Recipes!
+    </h1>
+    <form>
+
+    <label for="name">Recipe Name</label>
+    <input id="name" type="text">
+
+    <label for="description">Recipe Description</label>
+    <input id="description" type="text">
+
+    <label for="category">Recipe Category</label>
+    <input id="category" type="text">
+        <fieldset class="rating">
+
+            <legend>Star Rating</legend>
+
+            <input type="radio" id="5star" name="rating" value="5" />
+            <label class="full" for="5star" title="Excellent"></label>
+
+            <input type="radio" id="4star" name="rating" value="4" />
+            <label class="full" for="4star" title="Pretty good"></label>
+
+            <input type="radio" id="3star" name="rating" value="3" />
+            <label class="full" for="3star" title="Ok"></label>
+
+            <input type="radio" id="2star" name="rating" value="2" />
+            <label class="full" for="2star" title="Bad"></label>
+
+            <input type="radio" id="1star" name="rating" value="1" />
+            <label class="full" for="1star" title="Umm"></label>
+
+        </fieldset>
+        <button id="add" type="button">Add Recipe</button>
+    </form>
+</section>
+<section id="recipes">
+    <h1>Recipe List</h1>
+
+    <ul id="recipesList">
+
+    </ul>
+</section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
