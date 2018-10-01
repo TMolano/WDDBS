@@ -1,4 +1,4 @@
-localStorage.setItem("listItems", JSON.stringify($("#recipesList").append()));
+//localStorage.setItem("listItems", JSON.stringify($("#recipesList").append()));
 //$("#recipesList").html(localStorage.getItem("listItems"));
 
 //fetch data
@@ -42,9 +42,39 @@ localStorage.setItem("listItems", JSON.stringify($("#recipesList").append()));
 let add = document.getElementById("add");
 
 add.addEventListener("click", function () {
-    addItem();
+    validation();
 });
 
+//validate
+function validation(){
+
+    if(document.myForm.Name.value === ""){
+        alert("Please provide the Recipe Name!");
+        //document.myForm.Name.focus();
+        return false;
+    }
+
+    if(document.myForm.Description.value === ""){
+        alert("Please provide the Description!");
+        document.myForm.Description.focus();
+        return false;
+    }
+
+    if(document.myForm.Category.value === ""){
+        alert("Please provide the Category!");
+        document.myForm.Category.focus();
+        return false;
+    }
+
+    if(document.myForm.rating.value === ""){
+        alert("Please provide the Star Rating!");
+        document.myForm.rating.focus();
+        return false;
+    }
+    else{
+        addItem();
+    }
+}
 
 
 
