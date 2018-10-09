@@ -16,31 +16,31 @@ class App extends Component {
     }
     //Remove Item
     onDismiss(id){
-      const isNotId = item => item.key !==id;
-      const updatedList = this.state.tableContent.filter(isNotId);
-      this.setState({tableContent: updatedList});
+        const isNotId = item => item.key !==id;
+        const updatedList = this.state.tableContent.filter(isNotId);
+        this.setState({tableContent: updatedList});
     }
 
 
     //Add item
     handleClick() {
-            let randomID = Math.floor(Math.random() * 99999);
+        let randomID = Math.floor(Math.random() * 99999);
 
-            // recreate a new object and stock the new line in
-            let newTab = this.state.tableContent;
+        // recreate a new object and stock the new line in
+        let newTab = this.state.tableContent;
 
-            newTab.push({
-                key: randomID,
-                title: this.state.title,
-                amount: this.state.amount,
-            });
+        newTab.push({
+            key: randomID,
+            title: this.state.title,
+            amount: this.state.amount,
+        });
 
-            this.setState({
-                tableContent: newTab
-            });
+        this.setState({
+            tableContent: newTab
+        });
 
-            // Clear the content of the inputs
-        }
+        // Clear the content of the inputs
+    }
 
     //Update input field value state
     handleChange(event) {
@@ -54,6 +54,13 @@ class App extends Component {
             <section className="App">
                 <header>
                     <h1>Money Manager</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">Expenses</a></li>
+                            <li><a href="">Income</a></li>
+                        </ul>
+                    </nav>
                 </header>
 
                 <section>
@@ -85,7 +92,7 @@ class App extends Component {
                                     <td>{"$" + item.amount}</td>
                                     <td>
                                         <button onClick={() => this.onDismiss(item.key)}
-                                        type="button" className="fas fa-trash-alt" id="remove"></button>
+                                                type="button" className="fas fa-trash-alt" id="remove"></button>
                                     </td>
                                 </tr>
                             )}

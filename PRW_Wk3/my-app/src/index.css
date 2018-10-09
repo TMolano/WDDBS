@@ -1,0 +1,119 @@
+body, html {
+  margin: 0;
+  padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background: gainsboro;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1{
+    font-family: "Geneva", Arial, serif;
+    font-size: 3rem;
+    width: 35%;
+    margin: 0 auto;
+
+}
+
+section{
+
+}
+
+section>h2, h3{
+    background: grey;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 35%;
+}
+
+header,footer{
+    height: 5rem;
+    background: green;
+}
+
+footer{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+form{
+    width: 10%;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+table {
+    margin: 0 auto;
+    background: darkgray;
+    width: 35%;
+}
+
+th{
+
+}
+
+th:nth-child(3){
+    width: 5%;
+}
+
+td{
+    border: 1px solid black;
+    width: 35%;
+    background: white;
+}
+
+#remove, #add{
+    width: 50%;
+    height: 2rem;
+}
+
+#add{
+    margin: 1rem;
+
+}
+
+input, label{
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul>li{
+   margin: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: white;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px; }
