@@ -17,12 +17,17 @@ code {
     monospace;
 }
 
+
 h1{
     font-family: "Geneva", Arial, serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 35%;
+    text-align: center;
     margin: 0 auto;
+}
 
+h1, h2, h3{
+    text-align: center;
 }
 
 section{
@@ -73,21 +78,29 @@ td{
     border: 1px solid black;
     width: 35%;
     background: white;
+    text-align: center;
 }
 
 #remove, #add{
-    width: 50%;
+    width: 100%;
     height: 2rem;
+    cursor: pointer;
 }
 
 #add{
-    margin: 1rem;
-
+    margin-top: .5rem;
+    background: lightgreen;
 }
+
+#remove{
+    background: lightcoral;
+}
+
 
 input, label{
     width: 100%;
     margin: 0 auto;
+    box-sizing:border-box
 }
 
 ul{
@@ -96,11 +109,6 @@ ul{
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-}
-
-ul>li{
-   margin: 1rem;
-
 }
 
 a{
@@ -117,3 +125,28 @@ a:hover{
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px; }
+
+nav{
+    background: green;
+    padding: .5rem;
+    width: 100%;
+    text-align: right;
+    float: left;
+}
+
+nav>h1{
+    font-size: 3rem;
+    font-family: Impact, Arial, serif;
+}
+
+.navlink{
+    margin: 2rem;
+}
+
+.pie {
+margin: 2rem;
+}
+
+select{
+    width: 100%;
+}
