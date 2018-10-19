@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-
 import Overview from '../pages/Overview';
 import Income from '../pages/Income';
 import Expenses from '../pages/Expenses';
