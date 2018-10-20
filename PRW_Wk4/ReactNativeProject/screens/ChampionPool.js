@@ -49,7 +49,14 @@ export default class ChampionPool extends Component {
     }
 
     addItem(){
-        if(this.state.itemText){
+        if(!this.state.itemText) {
+            alert("Name field must not be empty!")
+        }
+
+        else if(!this.state.itemRole){
+            alert("Role field must not be empty!")
+        }
+        else{
             this.state.itemArray.push({
                 'itemName': this.state.itemText,
                 'itemRole': this.state.itemRole
@@ -81,11 +88,13 @@ export default class ChampionPool extends Component {
                 <TextInput style={styles.txtInput}
                            placeholder="Champion"
                            value={this.state.itemText}
+                           id="name"
                            onChangeText = {(itemText) => this.setState({itemText})}
                 />
                 <TextInput style={styles.txtInput}
                            placeholder="Role"
                            value={this.state.itemRole}
+                           id="role"
                            onChangeText = {(itemRole) => this.setState({itemRole})}
                 />
                 <TouchableOpacity

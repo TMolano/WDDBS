@@ -21,6 +21,7 @@ export default class Signup extends Component  {
     render() {
         return (
             <View style={styles.container}>
+                <Text style={styles.h1}>Welcome to League Stats!</Text>
                 <Text>Logged in as: {this.state.username}</Text>
                 <TextInput style={styles.txtInput}
                            placeholder="Name"
@@ -65,5 +66,9 @@ const styles = StyleSheet.create ({
         justifyContent: 'center',
         color: 'white',
         fontSize:20
+    },
+    h1: {
+        fontSize: 25,
+        justifyContent: 'center'
     }
     });
