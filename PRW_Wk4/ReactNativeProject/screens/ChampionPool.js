@@ -14,12 +14,12 @@ export default class ChampionPool extends Component {
         };
         this.addItem = this.addItem.bind(this)
     }
-    static navOptions = {
+    static navigationOptions = {
         tabBarLabel: 'ChampionPool',
         tabBarIcon: ({ tintColor }) => {
             return(
                 <MaterialIcons
-                    name="bars"
+                    name="home"
                     size={26}
                     style={{color: tintColor}}>
                 </MaterialIcons>

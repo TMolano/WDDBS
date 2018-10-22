@@ -14,12 +14,12 @@ export default class WinPercentage extends Component {
         };
         this.addItem = this.addItem.bind(this)
     }
-    static navOptions = {
+    static navigationOptions = {
         tabBarLabel: 'WinPercentage',
         tabBarIcon: ({ tintColor }) => {
             return(
                 <MaterialIcons
-                    name="infocircle"
+                    name="home"
                     size={26}
                     style={{color: tintColor}}>
                 </MaterialIcons>
@@ -74,18 +74,17 @@ export default class WinPercentage extends Component {
         this.setState({itemArray: this.state.itemArray});
     }
 
-    editItem(key){
+    /*editItem(key){
         const my_array = [...this.state.itemArray];
         my_array[key] = this.state.itemArray;
         this.setState({itemArray:my_array})
-    }
+    }*/
 
 
     render() {
 
         let myItems = this.state.itemArray.map((val, key) => {
-            return <WinList key={key} keyval={key} val={val} delMe={ () =>this.delItem(key)
-            } edit={() => this.editItem(key)}/>
+            return <WinList key={key} keyval={key} val={val} delMe={ () =>this.delItem(key)}/>
         });
 
         return(
@@ -99,7 +98,6 @@ export default class WinPercentage extends Component {
                 <TextInput style={styles.txtInput}
                            placeholder="Win Rate"
                            value={this.state.itemWin}
-                           keyboardType='numeric'
                            onChangeText = {(itemWin) => this.setState({itemWin})}
                 />
                 <TouchableOpacity
